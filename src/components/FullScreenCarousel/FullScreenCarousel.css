@@ -1,0 +1,129 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.FullScreenCarousel {
+  
+  width: 50%;
+  margin: 10rem auto;
+  height: 570px;
+}
+.carousel-header {
+  margin-bottom: 30px;
+}
+.carousel-container {
+  margin-top: 150px;
+
+}
+.carousel-title {
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.carousel-subtitle {
+  font-size: 2em;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+  margin-top: 30px;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+  .FullScreenCarousel {
+    width: 70%;
+  }
+
+  .slide img {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .FullScreenCarousel {
+    width: 90%;
+    margin: 5rem auto;
+    height: auto;
+  }
+
+  .carousel-title {
+    font-size: 2em;
+  }
+
+  .carousel-subtitle {
+    font-size: 1.5em;
+  }
+
+  .slide img {
+    width: 12rem;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .next {
+    right: -30px;
+  }
+
+  .prev {
+    left: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-title {
+    font-size: 1.8em;
+  }
+
+  .carousel-subtitle {
+    font-size: 1.2em;
+  }
+
+  .slide img {
+    width: 10rem;
+  }
+}

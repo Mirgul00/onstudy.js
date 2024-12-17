@@ -1,0 +1,169 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manjari:wght@100;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manjari:wght@100;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container-form {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;     /* Центрирование по вертикали */
+  min-height: 100vh;       /* Высота на весь экран */
+  background: linear-gradient(to bottom, #ffffff, #dfc3f6); /* Градиентный фон */
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
+
+
+.m_feedback-form {
+    animation: fadeIn 1s ease-out;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+    /* margin-top: 100px; */
+    /* margin-left: 430px; */
+    
+    background-color: #fff;
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  
+  
+  .m_feedback-form form label {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .m_feedback-form form input[type="text"],
+  .m_feedback-form form input[type="email"],
+  .m_feedback-form form textarea {
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e2e2e2;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  
+  .m_feedback-form form textarea {
+    resize: vertical;
+    height: 300px;
+    
+    
+  }
+  
+  .m_feedback-form form button[type="submit"] {
+    background-color: #8B88B6;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    width: 800px;
+    height: 55px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .m_feedback-form form button[type="submit"]:hover {
+    background-color: #8B88B6;
+
+  }
+
+  .img-form1 img{
+    width: 200px;
+    height: auto;
+    margin-bottom: -500px;
+  }
+
+  .img-form2 img{
+    width: 250px;
+    height: auto;
+    
+    margin-bottom: -500px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Адаптивные стили */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  .m_feedback-form {
+      padding: 60px;
+  }
+
+  .m_feedback-form form button[type="submit"] {
+      font-size: 18px;
+  }
+}
+
+/* Смартфоны (меньше 768px) */
+@media (max-width: 768px) {
+  .m_feedback-form {
+      padding: 40px;
+      margin-top: 50px;
+  }
+
+  .m_feedback-form form label {
+      font-size: 18px;
+  }
+
+  .m_feedback-form form input[type="text"],
+  .m_feedback-form form input[type="email"],
+  .m_feedback-form form textarea {
+      height: 45px;
+      font-size: 14px;
+  }
+
+  .m_feedback-form form textarea {
+      height: 200px;
+  }
+
+  .m_feedback-form form button[type="submit"] {
+      font-size: 16px;
+      height: 45px;
+      max-width: 100%;
+  }
+}
+
+/* Очень маленькие устройства (меньше 480px) */
+@media (max-width: 480px) {
+  .m_feedback-form {
+      padding: 20px;
+      margin-top: 30px;
+  }
+
+  .m_feedback-form form label {
+      font-size: 16px;
+  }
+
+  .m_feedback-form form input[type="text"],
+  .m_feedback-form form input[type="email"],
+  .m_feedback-form form textarea {
+      height: 40px;
+      padding: 8px;
+  }
+
+  .m_feedback-form form textarea {
+      height: 150px;
+  }
+
+  .m_feedback-form form button[type="submit"] {
+      font-size: 14px;
+      height: 40px;
+  }
+}

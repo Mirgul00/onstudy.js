@@ -1,0 +1,175 @@
+/* components/ReviewSlider/ReviewSlider.css */
+.review-slider-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    background: #f5f7ff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    /* gap: 20px; */
+  }
+  
+  .left-content {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 30px;
+
+  }
+  
+  .section-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .section-description {
+    font-size: 1.4em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #4E47FF;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .learn-more-button:hover {
+    background: #555;
+  }
+  
+  .info-box {
+    background: #E5E6F0;
+    color: black;
+    padding: 60px;
+    width: 400px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .box-text {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .box-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background: #4E47FF;
+    width: 300px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .box-button:hover {
+    background: #fff;
+  }
+  
+  .right-slider {
+    flex: 1;
+    max-width: 30%;
+    
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+
+  /* Для планшетов (768px и меньше) */
+@media (max-width: 768px) {
+  .review-slider-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .left-content {
+    max-width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .section-description {
+    font-size: 1.2em;
+  }
+
+  .info-box {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .box-text {
+    font-size: 1.6em;
+  }
+
+  .box-button {
+    width: 100%;
+    height: 50px;
+  }
+
+  .right-slider {
+    max-width: 100%;
+  }
+}
+
+/* Для мобильных устройств (480px и меньше) */
+@media (max-width: 480px) {
+  .review-slider-section {
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .section-description {
+    font-size: 1em;
+  }
+
+  .info-box {
+    padding: 20px;
+  }
+
+  .box-text {
+    font-size: 1.4em;
+  }
+
+  .box-button {
+    font-size: 0.9em;
+    height: 45px;
+  }
+
+  .learn-more-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}

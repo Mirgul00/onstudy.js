@@ -1,0 +1,187 @@
+/* Общая секция */
+.courses-section {
+  padding: 50px 20px;
+  margin-top: 100px;
+  background: #fff; /* Светлый фон */
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.courses-title {
+  font-size: 46px;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Контейнер карточек */
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Карточка */
+.course-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0ff);
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  width: 450px;
+  height: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Иконка курса */
+.course-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #7b61ff, #5a45e8);
+  color: #fff;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Название курса */
+.course-title {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Описание курса */
+.course-description {
+  font-size: 19px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Кнопка */
+.course-button {
+  background: #7b61ff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.course-button:hover {
+  background: #5a45e8;
+}
+
+/* Адаптивные стили */
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+  .courses-title {
+    font-size: 36px;
+  }
+
+  .course-card {
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+  }
+
+  .course-title {
+    font-size: 28px;
+  }
+
+  .course-description {
+    font-size: 17px;
+  }
+
+  .course-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+/* Смартфоны (до 768px) */
+@media (max-width: 768px) {
+  .courses-section {
+    padding: 40px 10px;
+  }
+
+  .courses-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .courses-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .course-card {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .course-title {
+    font-size: 24px;
+  }
+
+  .course-description {
+    font-size: 16px;
+  }
+
+  .course-button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* Маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .courses-section {
+    padding: 30px 10px;
+  }
+
+  .courses-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .courses-container {
+    gap: 15px;
+  }
+
+  .course-card {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .course-title {
+    font-size: 22px;
+  }
+
+  .course-description {
+    font-size: 14px;
+  }
+
+  .course-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
