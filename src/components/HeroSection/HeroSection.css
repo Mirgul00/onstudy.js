@@ -1,0 +1,193 @@
+
+/* ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Manjari:wght@100;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  height: 100vh;
+  background-image: url("../../assets/img/fonb2.png" );
+  
+  background-repeat: no-repeat ;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text .text-POS {
+  position: relative;
+  color: #3B2B47;
+  top: 180px;
+}
+
+.text .text-Bec {
+    position: relative;
+    font-size: 20px;
+    left:-40px;
+    top: 190px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.text h1 {
+  font-family: "Russo One", sans-serif;
+
+  font-size: 200px;
+  font-weight: bold;
+  line-height: 0.9;
+  margin-left: 100px;
+}
+
+.text h1 span {
+
+  color: #000000;
+  /* text-decoration: underline solid 3px blue; */
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.bubble.large {
+  width: 450px;
+  height: 450px;
+  margin-right: 1700px;
+  margin-bottom: 40px;
+}
+
+.bubble.medium {
+  width: 150px;
+  height: 150px;
+  left: 200px;
+  bottom: 20px;
+}
+
+.bubble.small {
+  width: 350px;
+  height: 350px;
+  margin-left: 1500px;
+  margin-top: 800px;
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+  .text h1 {
+    font-size: 120px;
+  }
+
+  .text .text-POS {
+    font-size: 38px;
+    margin-top: 100px;
+  }
+
+  .bubble.large {
+    width: 300px;
+    height: 300px;
+    margin-right: 1200px;
+  }
+
+  .bubble.medium {
+    width: 100px;
+    height: 100px;
+    left: 100px;
+  }
+
+  .bubble.small {
+    width: 250px;
+    height: 250px;
+    margin-left: 1000px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 80px;
+  }
+
+  .text .text-POS {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
+  .text .text-Bec {
+    font-size: 16px;
+  }
+
+  .bubble.large {
+    width: 250px;
+    height: 250px;
+    margin-right: 1000px;
+  }
+
+  .bubble.medium {
+    width: 80px;
+    height: 80px;
+    left: 50px;
+  }
+
+  .bubble.small {
+    width: 200px;
+    height: 200px;
+    margin-left: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text h1 {
+    font-size: 60px;
+  }
+
+  .text .text-POS {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .text .text-Bec {
+    font-size: 14px;
+  }
+
+  .bubble.large {
+    width: 200px;
+    height: 200px;
+    margin-right: 700px;
+  }
+
+  .bubble.medium {
+    width: 60px;
+    height: 60px;
+    left: 30px;
+  }
+
+  .bubble.small {
+    width: 150px;
+    height: 150px;
+    margin-left: 600px;
+  }
+}

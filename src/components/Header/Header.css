@@ -1,3 +1,134 @@
-* {
-    display: flex;
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  color: white;
+  z-index: 10;
+}
+
+/* .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logo-image {
+  width: 80px; 
+  height: 80px;
+  margin-left: 40px; 
+  object-fit: contain; 
+} */
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  margin-left: 5px;
+}
+
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  margin-left: 1000px;
+  display: flex;
+  gap: 90px; /* Увеличено расстояние между элементами */
+  font-size: 16px;
+}
+
+.navbar a {
+  font-family: "Abhaya Libre", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5; /* Оптимизирована межстрочная высота */
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Эффект при наведении */
+.navbar a:hover {
+  color: #22442E; /* Цвет текста при наведении */
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Эффект при клике */
+.navbar a:active {
+  color: #FF5722; /* Цвет текста при клике */
+}
+
+/* Для планшетов (768px и меньше) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 60px; /* Уменьшаем размер логотипа */
+  }
+
+  .navbar {
+    gap: 30px;
+    font-size: 14px;
+  }
+
+  .navbar a {
+    font-size: 20px; /* Уменьшаем размер текста */
+  }
+}
+
+/* Для мобильных устройств (480px и меньше) */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 50px; /* Еще меньше логотип */
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
 }
